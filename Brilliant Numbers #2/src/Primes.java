@@ -6,14 +6,12 @@ public class Primes {
 	
 	public Primes(int n) {
 	
-		//initialize primes
 		primes = new ArrayList<Integer>();
-		//call the initPrimes method
 		initPrimes(n);
 	}
 
     
-//methods you need to create
+	
 public void initPrimes(int n){
 	
 	int count = 0;
@@ -90,9 +88,6 @@ public static ArrayList<Integer> getPrimeFactors(int n){
          
 }
 
-
-
-//some useful methods for later in the project
 public ArrayList<Integer> get() {
 	return primes;
 }
