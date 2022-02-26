@@ -1,18 +1,17 @@
 public class Main {
 
 	public static Primes p = new Primes(6);
-	//public static Brilliant b = new Brilliant(11);
+	public static Brilliant b = new Brilliant(11);
 	
 
 	public static void main(String[] args) {
-		//System.out.println(b.getBrilliants());
-		//System.out.println(p.get());
-		//System.out.println(p.isPrime(26));
-		//System.out.println(p.get());
-		//System.out.print(nextPrime(2));
-		//Primes q = new Primes(3);
-		//System.out.println(q.get());
-		
+		System.out.println(b.getBrilliants());
+		System.out.println(p.get());
+		System.out.println(p.isPrime(26));
+		System.out.println(p.get());
+		System.out.print(nextPrime(2));
+		Primes q = new Primes(3);
+		System.out.println(q.get());
 		
 		
 	}
@@ -51,7 +50,7 @@ public class Main {
 		return digits;
 	}
 	
-public static boolean isBrilliant(int n) {
+	public static boolean isBrilliant(int n) {
 		
 		boolean brilliant = false;
 		if (Primes.getPrimeFactors(n).size() == 2 && Main.sameDigits(Primes.getPrimeFactors(n).get(0), Primes.getPrimeFactors(n).get(1))) {
